@@ -20,6 +20,7 @@ def flatten_structure(path, structure)
   results
 end
 
+confine :osfamily => 'RedHat'
 
 output=%x{/usr/sbin/dmidecode --type 11 2>/dev/null}
 
