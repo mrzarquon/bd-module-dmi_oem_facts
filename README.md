@@ -10,9 +10,10 @@ with a Razor server to assist in node tagging, and specifically synced to the
 Razor microkernel agent with the razorext module.
 
 The fact structure is simple, and returns each string as a top level fact:
-dmi_oem_string_1
-dmi_oem_string_2
-...
+- dmi_oem_string_1
+- dmi_oem_string_2
+- ...
+
 These are consistent and based on the output of the following command:
 `/usr/sbin/dmidecode --type 11`
 
@@ -22,6 +23,6 @@ By using these facts, combined with Razor and the Razor UCS hooks, one can set t
 an intended Puppet Role for a node in the UCS Manager and Director interfaces, via
 the Service Profile field name (dmi_oem_string_2's value)
 
-More Information:
-Razor Link
-Razor EXT
+## More Information ##
+- Razor Link
+- [Razorext Module](https://github.com/mrzarquon/bd-module-razorext)
